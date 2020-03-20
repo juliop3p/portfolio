@@ -1,0 +1,122 @@
+.avatar {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px #ccc;
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-container strong {
+    margin: 15px 0px;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.header-about {
+    height: 70vh;
+}
+
+.header-about .header-content {
+    top: 30%;
+}
+
+.aboutme-container {
+    width: 85%;
+    margin: -120px auto 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px #ccc;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    animation: moveLeft 1s;
+}
+
+.aboutme-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutme-text {
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 65px;
+}
+
+@media (max-width: 1050px) {
+    .aboutme-container {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar-container strong {
+        display: none;
+    }
+
+    .avatar {
+        margin: 15px auto;
+    }
+}
+
+/*  */
+.container-free-time {
+    width: 90%;
+    margin: 55px auto;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.container-free-time i {
+    font-size: 5rem;
+    margin-right: 25px;
+    color: var(--purple);
+}
+
+.doings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.doings-desc {
+    width: 600px;
+}
+
+.doings-border {
+    width: 300px;
+    margin: 35px auto;
+}
+
+.motivacional-phrase {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: all 2s linear;
+}
+
+.fa-quote-left {
+    color: var(--blue);
+}
+
+.motivacional-text {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

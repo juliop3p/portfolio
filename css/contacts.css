@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+}
+
+.header-contacts {
+    height: 80px;
+}
+
+.content h1 {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.content hr {
+    border-color: #fff;
+}
+
+.container {
+    position: relative;
+    /* overflow: hidden; */
+    background-color: var(--purple);
+    flex-grow: 1;
+}
+
+.contacts {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #888;
+    border-radius: 20px;
+    padding: 20px;
+    animation: move 1s;
+}
+
+.grid-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.contacts p {
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.contacts p a {
+    color: var(--dark);
+}
+
+.contacts p a:hover {
+    opacity: 0.8;
+}
+
+.contacts-text {
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Icons colors */
+.contacts .fas, 
+.contacts .fab {
+    font-size: 1.2rem;
+}
+
+.fa-mobile-alt {
+    color: var(--blue);
+}
+
+.fa-whatsapp {
+    color: #24cb62;
+}
+
+.fa-envelope-open-text {
+    color: #cf493b;
+}
+
+.fa-linkedin {
+    color: #0077B6;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-discord {
+    color: #7084D3;
+}
+/* end Icons colors */
+
+/* Circles animations */
+.circles {
+    width: 100%;
+    background-color: aqua;
+}
+
+.circles li {
+    border-radius: 50%;
+    background: rgb(226, 221, 221);
+    display: block;
+    position: absolute;
+
+    animation: circlesUp 2s infinite;
+}
+
+/* end Circles animations */
+@keyframes circlesUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* end Circle animations */
+
+@media (max-width: 1000px) {
+    .contacts {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-contacts {
+        grid-template-columns: 1fr;
+        justify-items: left
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
