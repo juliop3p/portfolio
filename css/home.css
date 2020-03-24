@@ -120,6 +120,8 @@ main.main-knowledge {
 .english {
     background-image: url('../images/english-bg.jpeg');
     background: linear-gradient(#0008, #0008), url('../images/english-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 20px;
     margin-bottom: 80px;
