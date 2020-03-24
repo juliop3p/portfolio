@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    overflow: hidden;
 }
 
 .header-contacts {
@@ -17,7 +18,6 @@ body {
 
 .container {
     position: relative;
-    /* overflow: hidden; */
     background-color: var(--purple);
     flex-grow: 1;
 }
@@ -95,12 +95,12 @@ body {
 }
 
 .circles li {
-    border-radius: 50%;
-    background: rgb(226, 221, 221);
+    background: rgba(226, 221, 221, 0.15);
     display: block;
     position: absolute;
 
     animation: circlesUp 2s infinite;
+    animation-direction: alternate;
 }
 
 /* end Circles animations */
@@ -114,7 +114,7 @@ body {
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) rotate(960deg);
     }
 }
 

@@ -6,8 +6,8 @@ for(let i=0; i<11; i++) {
 
     const random = (min, max) => Math.floor(Math.random() * (max - min) + min)
 
-    const size = random(10, 20)
-    const position = random(0, 99)
+    const size = random(10, 99)
+    const position = random(1, 99)
     const delay = random(5, 0.1)
 
     li.style.width = `${size}px`

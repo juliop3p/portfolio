@@ -57,9 +57,14 @@ main.main-knowledge {
 }
 
 .card-body {
-    text-align: justify;
     padding: 0px 8px;
 }
+
+.card-body p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
 
 .card-logo {
     height: 88px;
@@ -113,6 +118,7 @@ main.main-knowledge {
 
 /* English */
 .english {
+    background-image: url('../images/english-bg.jpeg');
     background: linear-gradient(#0008, #0008), url('../images/english-bg.jpeg');
     color: #fff;
     padding: 20px;
@@ -346,7 +352,7 @@ a.project-link:hover {
 
 .card-course {
     width: 150px;
-    height: 180px;
+    height: 200px;
     border: 1px solid #ccc;
     background-color: #fff;
 
